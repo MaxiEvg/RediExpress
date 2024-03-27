@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login">
+    tools:context=".setnewpass">
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -24,10 +24,10 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/newpasswordtext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/welcome_back"
+                android:text="@string/new_password"
                 android:textAlignment="center"
                 android:textColor="@color/text_primary"
                 android:textSize="24sp"
@@ -39,12 +39,12 @@
                 android:layout_height="8dp" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/fillnewpass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|start"
                 android:fontFamily="@font/roboto_regular"
-                android:text="@string/fill_in_your_emails_and_password_to_continue"
+                android:text="@string/enter_new_password"
                 android:textColor="@color/gray_light"
                 android:textSize="16sp"
                 tools:ignore="TextSizeCheck" />
@@ -67,32 +67,6 @@
             android:orientation="vertical"
             tools:ignore="UselessParent">
 
-            <TextView
-                android:id="@+id/emailaddr"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/email_address"
-                android:textColor="@color/gray_light" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="8dp"
-                android:layout_weight="1" />
-
-            <EditText
-                android:id="@+id/imailaddr"
-                android:layout_width="match_parent"
-                android:layout_height="32dp"
-                android:layout_weight="1"
-                android:background="@drawable/inputfieldgray"
-                android:autofillHints="emailAddress"
-                android:inputType="textEmailAddress"
-                android:paddingStart="8dp"
-                android:textColor="@color/text_primary"
-                android:textColorHint="@color/gray_light"
-                tools:ignore="RtlSymmetry,TouchTargetSizeCheck" />
-
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="24dp"
@@ -112,14 +86,15 @@
                 android:layout_weight="1" />
 
             <EditText
-                android:id="@+id/loginpassowrd"
+                android:id="@+id/inewpass1"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:layout_weight="1"
                 android:background="@drawable/inputfieldgray"
+                android:ems="10"
                 android:hint="@string/password1"
+                android:importantForAutofill="no"
                 android:inputType="textPassword"
-                android:autofillHints="password"
                 android:paddingStart="8dp"
                 android:textColor="@color/text_primary"
                 android:textColorHint="@color/gray_light"
@@ -128,37 +103,36 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="8dp"
                 android:layout_weight="1" />
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/confirmnewpass"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:text="@string/iconfirm_password"
+                android:textColor="@color/gray_light" />
 
-                <CheckBox
-                    android:id="@+id/rememberpass"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:gravity="center"
-                    android:minHeight="48dp"
-                    android:paddingStart="8dp"
-                    android:button="@drawable/selectorcbox"
-                    android:text="@string/remember_password"
-                    android:textColor="@color/gray_light"
-                    tools:ignore="NestedWeights" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_weight="1" />
 
-                <TextView
-                    android:id="@+id/forgotpasswordtextbutton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="end"
-                    android:text="@string/forgot_password"
-                    android:textColor="@color/primary_color" />
-            </LinearLayout>
+            <EditText
+                android:id="@+id/inewpass2"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:background="@drawable/inputfieldgray"
+                android:ems="10"
+                android:hint="@string/password1"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:paddingStart="8dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/gray_light"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
     </FrameLayout>
@@ -181,71 +155,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="top"
             android:background="@drawable/logininactive"
-            android:fontFamily="@font/roboto_bold"
-            android:stateListAnimator="@null"/>
-
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="visible">
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="bottom|center"
-                tools:ignore="UselessParent">
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_regular"
-                    android:text="@string/already_have_an_accountq"
-                    android:textColor="#A7A7A7"
-                    android:textSize="16sp"
-                    tools:ignore="TextSizeCheck" />
-
-                <TextView
-                    android:id="@+id/sign_up"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_regular"
-                    android:text="@string/signup"
-                    android:textColor="@color/primary_color"
-                    android:textSize="16sp"
-                    tools:ignore="TextSizeCheck" />
-
-            </TableRow>
-
-        </TableLayout>
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="bottom"
-            android:layout_marginTop="64dp">
-
-            <TextView
-                android:id="@+id/orsigningusing"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="@string/or_sign_in_using"
-                android:textColor="@color/gray_light"
-                android:textSize="16sp" />
-
-            <ImageButton
-                android:id="@+id/googlelogo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|center"
-                android:background="#00FFFFFF"
-                android:contentDescription="@string/googlelogodesk"
-                android:scaleType="center"
-                app:srcCompat="@drawable/googlelogo"
-                tools:ignore="TouchTargetSizeCheck" />
-        </FrameLayout>
+            android:stateListAnimator="@null"
+            android:text="" />
 
     </FrameLayout>
 

@@ -26,7 +26,7 @@ public class onboarding4 extends AppCompatActivity {
         //skip to onboarding3
         ImageButton skipbutton = findViewById(R.id.skipbutton);
         skipbutton.setOnClickListener(v -> {
-            Intent intent = new Intent(onboarding4.this, onboarding3.class);
+            Intent intent = new Intent(onboarding4.this, holder.class);
             startActivity(intent);
         });
 

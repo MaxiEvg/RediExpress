@@ -25,6 +25,12 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        //change srcCompat from framewhite to frameblue after 1.5 sec
+        new Handler().postDelayed(() -> findViewById(R.id.framewhite).setBackgroundResource(R.drawable.frameblue), 1500);
+
+        //change main background color to primary_color after 1.5 sec
+        new Handler().postDelayed(() -> findViewById(R.id.main).setBackgroundColor(getColor(R.color.primary_color)), 1500);
+
         // automatically moves to onboarding1 after 3 seconds
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(MainActivity.this, onboarding1.class);

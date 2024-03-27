@@ -13,11 +13,34 @@
         android:theme="@style/Theme.Resiexpresschamp"
         tools:targetApi="31">
         <activity
-            android:name=".login"
+            android:name=".tacapp"
             android:exported="false" />
         <activity
-            android:name=".signup"
+            android:name=".home"
             android:exported="false" />
+        <activity
+            android:name=".setnewpass"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".otpverification"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".forgotpass"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".holder"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".signup"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".onboarding3"
             android:exported="false" />

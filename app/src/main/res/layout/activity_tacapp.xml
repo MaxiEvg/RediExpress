@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tacapp">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terms And Conditions And Private Policy" />
+
+            <TextView
+                android:id="@+id/TaCappText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terms and Conditions  Introduction  These Terms and Conditions govern your use of the [Delivery App Name] (hereinafter referred to as &quot;the App&quot;) operated by [Your Company Name] (hereinafter referred to as &quot;the Company&quot;). By accessing or using the App, you agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, you may not use the App. Use of the App  The App is intended for personal, non-commercial use only. You must be at least 18 years old to use the App. You agree not to use the App for any illegal or unauthorized purpose. User Accounts  In order to use certain features of the App, you may be required to create a user account. You are responsible for maintaining the confidentiality of your account and password and for restricting access to your account. You agree to accept responsibility for all activities that occur under your account. Delivery Services  The Company provides a platform for connecting users with delivery providers. The Company is not responsible for the actions or omissions of the delivery providers. Users are solely responsible for the items they request to be delivered through the App. Payments  Payment for delivery services will be processed through the App. Users agree to pay all fees and charges associated with their use of the App. Intellectual Property  The App and its original content, features, and functionality are owned by the Company and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws. Disclaimer  The App is provided on an &quot;as-is&quot; and &quot;as available&quot; basis without any warranties, express or implied. The Company makes no representations or warranties of any kind, whether express or implied, regarding the accuracy, reliability, or suitability of the App. Limitation of Liability  In no event shall the Company be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses. Governing Law  These Terms and Conditions shall be governed by and construed in accordance with the laws of [Your Country], without regard to its conflict of law provisions. Changes to Terms and Conditions  The Company reserves the right to modify or replace these Terms and Conditions at any time. Your continued use of the App after any such changes constitutes your acceptance of the new Terms and Conditions. Contact Us  If you have any questions about these Terms and Conditions, please contact us at [Contact Email]. Privacy Policy  Your privacy is important to us. It is [Your Company Name]'s policy to respect your privacy regarding any information we may collect from you through our app, [Delivery App Name].  Information We Collect  We may collect personal information such as your name, email address, phone number, and delivery address when you create an account on our app. How We Use Your Information  We may use the information we collect from you to: Provide and maintain our app; Notify you about changes to our app; Provide customer support; Gather analysis or valuable information so that we can improve our app; Monitor the usage of our app; Detect, prevent, and address technical issues. Security  We value your trust in providing us your personal information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security. Links to Other Sites  Our app may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over, and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services. Children’s Privacy  Our app does not address anyone under the age of 18. We do not knowingly collect personal identifiable information from children under 18. In the case we discover that a child under 18 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions. Changes to This Privacy Policy  We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page. Contact Us  If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at [Contact Email]." />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
