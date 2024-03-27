@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".signup">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/create_an_account"
+        android:textColor="@color/text_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/complete_the_sign_up_process_to_get_started"
+        android:textColor="@color/gray_light"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:ignore="TextSizeCheck" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Full name"
+                android:textColor="@color/gray_light"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/ifullname"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@drawable/inputfieldgray"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="text|textPersonName"
+                android:paddingStart="8dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_weight="0" />
+
+            <TextView
+                android:id="@+id/phonenum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/phone_number"
+                android:textColor="@color/gray_light"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/iphonenum"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@drawable/inputfieldgray"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="phone"
+                android:maxLength="12"
+                android:paddingStart="8dp"
+                android:textColor="@color/text_secondary"
+                android:textColorHint="@color/gray_light"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/emailaddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/email_address"
+                android:textColor="@color/gray_light"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/imailaddr"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@drawable/inputfieldgray"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="textEmailAddress"
+                android:paddingStart="8dp"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/password"
+                android:textColor="@color/gray_light"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/ipassword1"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@drawable/inputfieldgray"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="@string/password1"
+                android:inputType="text|textPassword"
+                android:paddingStart="8dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/gray_light"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/confirm_password"
+                android:textColor="@color/gray_light"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/ipassword2"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@drawable/inputfieldgray"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="@string/password2"
+                android:inputType="textPassword"
+                android:paddingStart="8dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/gray_light"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_weight="0" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/TaCappbox"
+                         android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:button="@drawable/selectorcbox"
+                        android:clickable="true"
+                        android:minHeight="48dp"  />
+
+                    <TextView
+                        android:id="@+id/TaCapp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:paddingStart="8dp"
+                        android:text="@string/by_ticking_this_box_you_agree_to_our_terms_and_conditions_and_private_policy"
+                        android:textColor="@color/gray_light"
+                        tools:ignore="TextContrastCheck">
+
+                    </TextView>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="344dp"
+        android:layout_height="158dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck">
+
+        <ImageButton
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@drawable/signup"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textColor="@android:color/white"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="64dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/already_have_an_accountq"
+                        android:textColor="#A7A7A7"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/signin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/sign_in"
+                        android:textColor="@color/primary_color"
+                        android:textSize="14sp"
+                        tools:ignore="TextSizeCheck" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center">
+
+                    <TextView
+                        android:id="@+id/orsigningusing"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:text="@string/or_sign_in_using"
+                        android:textColor="@color/gray_light" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center">
+
+                    <ImageButton
+                        android:id="@+id/googlelogo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:background="@color/white"
+                        android:contentDescription="@string/googlelogo"
+                        android:scaleType="center"
+                        app:srcCompat="@drawable/googlelogo"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
