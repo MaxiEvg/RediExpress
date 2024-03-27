@@ -18,7 +18,6 @@
         <activity
             android:name=".signup"
             android:exported="false" />
-
         <activity
             android:name=".onboarding3"
             android:exported="false" />
