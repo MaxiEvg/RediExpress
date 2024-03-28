@@ -10,7 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity_s1 extends AppCompatActivity {
 
     private static final long SPLASH_DELAY = 3000; // 3 seconds
 
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_s1);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
         //change main background color to primary_color after 1.5 sec
         new Handler().postDelayed(() -> findViewById(R.id.main).setBackgroundColor(getColor(R.color.primary_color)), 1500);
 
-        // automatically moves to onboarding1 after 3 seconds
+        // automatically moves to onboarding1_s1 after 3 seconds
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(MainActivity.this, onboarding1.class);
+            Intent intent = new Intent(MainActivity_s1.this, onboarding1_s1.class);
             startActivity(intent);
             finish();
         }, SPLASH_DELAY);

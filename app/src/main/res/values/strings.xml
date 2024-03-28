@@ -53,4 +53,11 @@
     <string name="signup">Sign Up</string>
     <string name="mail_ru">********@mail.ru</string>
     <string name="new_password">New Password</string>
+    <string name="profile">Profile</string>
+    <string name="track">Track</string>
+    <string name="wallet">Wallet</string>
+    <string name="home">Home</string>
+    <string name="statements_reports"><![CDATA[Statements & Reports]]></string>
+    <string name="mute_unmute_set_location_tracking_setting"><![CDATA[mute, unmute, set location & tracking setting]]></string>
+    <string name="card_bank_account_settings"><![CDATA[Card & Bank account settings]]></string>
 </resources>

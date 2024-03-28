@@ -12,21 +12,21 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class login extends AppCompatActivity {
+public class login_s2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_login_s2);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        findViewById(R.id.forgotpasswordtextbutton).setOnClickListener(v -> startActivity(new Intent(this,forgotpass.class)));
-        findViewById(R.id.sign_up).setOnClickListener(v -> startActivity(new Intent(this,signup.class)));
+        findViewById(R.id.forgotpasswordtextbutton).setOnClickListener(v -> startActivity(new Intent(this, forgotpass_s2.class)));
+        findViewById(R.id.sign_up).setOnClickListener(v -> startActivity(new Intent(this, signup_s2.class)));
 
         EditText emailaddres = findViewById(R.id.imailaddr);
         emailaddres.setOnFocusChangeListener(new View.OnFocusChangeListener() {
@@ -60,7 +60,7 @@ public class login extends AppCompatActivity {
             }
         });
 
-        // Check if the password and email address are valid make login button active for every 0.5 sec
+        // Check if the password and email address are valid make login_s2 button active for every 0.5 sec
 
         new Thread(() -> {
             while (true) {
@@ -79,7 +79,7 @@ public class login extends AppCompatActivity {
             }
         }).start();
 
-        findViewById(R.id.loginbutton).setOnClickListener(v -> startActivity(new Intent(this,home.class)));
+        findViewById(R.id.loginbutton).setOnClickListener(v -> startActivity(new Intent(this, home_s2.class)));
     }
 
     public boolean isValidEmail(String email) {

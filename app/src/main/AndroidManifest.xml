@@ -13,45 +13,54 @@
         android:theme="@style/Theme.Resiexpresschamp"
         tools:targetApi="31">
         <activity
+            android:name=".addpayment_s3"
+            android:exported="false" />
+        <activity
+            android:name=".profile_s3"
+            android:exported="false" />
+        <activity
+            android:name=".home_s3"
+            android:exported="false" />
+        <activity
             android:name=".tacapp"
             android:exported="false" />
         <activity
-            android:name=".home"
+            android:name=".home_s2"
             android:exported="false" />
         <activity
-            android:name=".setnewpass"
+            android:name=".setnewpass_s2"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".otpverification"
+            android:name=".otpverification_s2"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".forgotpass"
+            android:name=".forgotpass_s2"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".holder"
+            android:name=".holder_s1"
             android:exported="false" />
         <activity
-            android:name=".login"
+            android:name=".login_s2"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".signup"
+            android:name=".signup_s2"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".onboarding3"
+            android:name=".onboarding3_s1"
             android:exported="false" />
         <activity
-            android:name=".onboarding4"
+            android:name=".onboarding4_s1"
             android:exported="false" />
         <activity
-            android:name=".onboarding1"
+            android:name=".onboarding1_s1"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity_s1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

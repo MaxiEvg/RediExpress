@@ -2,7 +2,7 @@ package com.rediexpress.resiexpresschamp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,25 +10,31 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class holder extends AppCompatActivity {
-    private static final long SPLASH_DELAY = 50; // 50 ms
+public class onboarding4_s1 extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_holder);
+        setContentView(R.layout.activity_onboarding4_s1);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        // automatically moves to login
-        new Handler().postDelayed(() -> {
-            Intent intent = new Intent(holder.this, login.class);
+        //skip to onboarding3_s1
+        ImageButton skipbutton = findViewById(R.id.skipbutton);
+        skipbutton.setOnClickListener(v -> {
+            Intent intent = new Intent(onboarding4_s1.this, holder_s1.class);
             startActivity(intent);
-            finish();
-        }, SPLASH_DELAY);
+        });
 
+        //move to next activity
+        ImageButton nextbutton = findViewById(R.id.nextbutton);
+        nextbutton.setOnClickListener(v -> {
+            Intent intent = new Intent(onboarding4_s1.this, onboarding3_s1.class);
+            startActivity(intent);
+        });
     }
 }

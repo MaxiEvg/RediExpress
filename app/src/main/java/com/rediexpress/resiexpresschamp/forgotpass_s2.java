@@ -11,13 +11,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class forgotpass extends AppCompatActivity {
+public class forgotpass_s2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_forgotpass);
+        setContentView(R.layout.activity_forgotpass_s2);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -38,7 +38,7 @@ public class forgotpass extends AppCompatActivity {
         });
 
 
-        // Check if the password and email address are valid make login button active for every 0.5 sec
+        // Check if the password and email address are valid make login_s2 button active for every 0.5 sec
         new Thread(() -> {
             while (true) {
                 try { Thread.sleep(500); } catch (InterruptedException e) {e.printStackTrace();}
@@ -55,10 +55,10 @@ public class forgotpass extends AppCompatActivity {
             }
         }).start();
 
-        findViewById(R.id.signin).setOnClickListener(v -> startActivity(new Intent(this,login.class)));
+        findViewById(R.id.signin).setOnClickListener(v -> startActivity(new Intent(this, login_s2.class)));
 
         findViewById(R.id.setnewpass).setOnClickListener(v -> {
-            startActivity(new Intent(this,otpverification.class));
+            startActivity(new Intent(this, otpverification_s2.class));
         });
 
 

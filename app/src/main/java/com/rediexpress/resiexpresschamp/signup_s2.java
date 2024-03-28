@@ -19,14 +19,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class signup extends AppCompatActivity {
+public class signup_s2 extends AppCompatActivity {
 
     @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_signup_s2);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -41,7 +41,7 @@ public class signup extends AppCompatActivity {
 
         //open local pdf of TaCapp when clicked
         TaCapp.setOnClickListener(v -> {
-            Intent intent = new Intent(signup.this, tacapp.class);
+            Intent intent = new Intent(signup_s2.this, tacapp.class);
             startActivity(intent);
         });
 
@@ -207,10 +207,10 @@ public class signup extends AppCompatActivity {
 
         //transfer
         findViewById(R.id.sign_up).setOnClickListener(v -> {
-            startActivity(new Intent(this, login.class));
+            startActivity(new Intent(this, login_s2.class));
         });
         findViewById(R.id.signin).setOnClickListener(v -> {
-            startActivity(new Intent(this, login.class));
+            startActivity(new Intent(this, login_s2.class));
         });
     }
 

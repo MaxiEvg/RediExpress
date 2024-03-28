@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".onboarding4">
+    tools:context=".onboarding4_s1">
 
     <ImageView
         android:id="@+id/onboarding4img"

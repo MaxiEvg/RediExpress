@@ -15,13 +15,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class otpverification extends AppCompatActivity {
+public class otpverification_s2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_otpverification);
+        setContentView(R.layout.activity_otpverification_s2);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -194,7 +194,7 @@ public class otpverification extends AppCompatActivity {
         });
 
         findViewById(R.id.setnewpass).setOnClickListener(v -> {
-           startActivity(new Intent(this,setnewpass.class));
+           startActivity(new Intent(this, setnewpass_s2.class));
         });
     }
 }

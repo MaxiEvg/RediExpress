@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".forgotpass">
+    tools:context=".forgotpass_s2">
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="283dp"
@@ -115,7 +115,8 @@
             android:layout_gravity="top"
             android:background="@drawable/sendotpinactive"
             android:text=""
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+            android:importantForAccessibility="no" />
 
         <TableLayout
             android:layout_width="match_parent"

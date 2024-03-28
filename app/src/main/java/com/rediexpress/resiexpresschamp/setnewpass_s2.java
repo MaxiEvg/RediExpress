@@ -11,13 +11,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class setnewpass extends AppCompatActivity {
+public class setnewpass_s2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_setnewpass);
+        setContentView(R.layout.activity_setnewpass_s2);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -34,7 +34,7 @@ public class setnewpass extends AppCompatActivity {
             findViewById(R.id.inewpass2).setBackgroundResource(R.drawable.inputfieldred);
         }
 
-        // if passowrds match each other and they are valid make login button @loginbuttonactvie
+        // if passowrds match each other and they are valid make login_s2 button @loginbuttonactvie
         Button loginButton = findViewById(R.id.loginbutton);
 
         // Check if passwords match and are valid
@@ -58,7 +58,7 @@ public class setnewpass extends AppCompatActivity {
         }).start();
 
         findViewById(R.id.loginbutton).setOnClickListener(v -> {
-            startActivity(new Intent(this,login.class));
+            startActivity(new Intent(this, login_s2.class));
         });
     }
     public boolean passwordsMatch() {
