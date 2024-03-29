@@ -5,30 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".addpayment_s3">
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toppanel">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/searchbar"
-            android:fontFamily="@font/roboto_regular"
-            android:hint="Search for a driver"
-            android:paddingStart="12dp"
-            android:textColorHint="@color/gray_soft"
-            android:textSize="12sp"
-            tools:ignore="RtlSymmetry,TouchTargetSizeCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
+    tools:context=".notifications_s3">
 
     <FrameLayout
         android:id="@+id/toppanel"
@@ -41,14 +18,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/addpaymentmethod"
+            android:id="@+id/Notifications"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
             android:fontFamily="@font/roboto_medium"
             android:gravity="center"
             android:paddingBottom="8dp"
-            android:text="Add Payment method"
+            android:text="Notifications"
             android:textColor="@color/gray_light"
             android:textSize="16sp" />
 
@@ -65,4 +42,26 @@
 
     </FrameLayout>
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toppanel"
+        app:srcCompat="@drawable/notification" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="You have no notifications"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -12,12 +13,13 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/white"
+        android:elevation="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/profile"
+            android:id="@+id/Profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
@@ -27,6 +29,7 @@
             android:text="Profile"
             android:textColor="@color/gray_light"
             android:textSize="16sp" />
+
     </FrameLayout>
 
     <FrameLayout
@@ -34,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="19dp"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,11 +93,11 @@
                             android:textSize="12sp" />
 
                         <TextView
-                            android:id="@+id/textView6"
+                            android:id="@+id/balance"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/roboto_regular"
-                            android:text="N10,712:00"
+                            android:text="@string/n10_712_00"
                             android:textColor="@color/primary_color"
                             android:textSize="12sp" />
                     </TableRow>
@@ -311,7 +314,7 @@
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/frameLayout9"
+        android:id="@+id/notificationsettingsbox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -350,7 +353,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_medium"
                     android:paddingTop="12dp"
-                    android:text="Notifictions Settings"
+                    android:text="Notification Settings"
                     android:textColor="@color/text_primary"
                     android:textSize="16sp" />
 
@@ -393,7 +396,7 @@
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/frameLayout10"
+        android:id="@+id/cardeditbox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -402,7 +405,7 @@
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout9">
+        app:layout_constraintTop_toBottomOf="@+id/notificationsettingsbox">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -484,7 +487,7 @@
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout10">
+        app:layout_constraintTop_toBottomOf="@+id/cardeditbox">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -639,6 +642,7 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/logoutbox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"

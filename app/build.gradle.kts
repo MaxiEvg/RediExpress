@@ -1,6 +1,4 @@
-import org.apache.tools.ant.util.JavaEnvUtils.VERSION_1_8
-
-plugins {
+    plugins {
     alias(libs.plugins.androidApplication)
 }
 
@@ -44,6 +42,8 @@ dependencies {
     implementation(libs.annotation)
     implementation(libs.lifecycle.livedata.ktx)
     implementation(libs.lifecycle.viewmodel.ktx)
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

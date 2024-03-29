@@ -13,13 +13,29 @@
         android:theme="@style/Theme.Resiexpresschamp"
         tools:targetApi="31">
         <activity
+            android:name=".chat"
+            android:exported="false" />
+        <activity
+            android:name=".sendapackage_s3"
+            android:exported="false" />
+        <activity
+            android:name=".notifications_s3"
+            android:exported="false" />
+        <activity
+            android:name=".track_s3"
+            android:exported="false" />
+        <activity
+            android:name=".wallet_s3"
+            android:exported="false" />
+        <activity
+            android:name=".home_s3"
+            android:exported="false"
+            android:label="@string/title_activity_home_s3" />
+        <activity
             android:name=".addpayment_s3"
             android:exported="false" />
         <activity
             android:name=".profile_s3"
-            android:exported="false" />
-        <activity
-            android:name=".home_s3"
             android:exported="false" />
         <activity
             android:name=".tacapp"

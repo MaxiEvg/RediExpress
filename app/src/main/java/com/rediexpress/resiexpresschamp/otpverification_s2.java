@@ -193,8 +193,6 @@ public class otpverification_s2 extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.setnewpass).setOnClickListener(v -> {
-           startActivity(new Intent(this, setnewpass_s2.class));
-        });
+        findViewById(R.id.setnewpass).setOnClickListener(v -> startActivity(new Intent(this, setnewpass_s2.class)));
     }
 }

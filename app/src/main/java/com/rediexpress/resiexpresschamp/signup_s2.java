@@ -206,12 +206,8 @@ public class signup_s2 extends AppCompatActivity {
 
 
         //transfer
-        findViewById(R.id.sign_up).setOnClickListener(v -> {
-            startActivity(new Intent(this, login_s2.class));
-        });
-        findViewById(R.id.signin).setOnClickListener(v -> {
-            startActivity(new Intent(this, login_s2.class));
-        });
+        findViewById(R.id.sign_up).setOnClickListener(v -> startActivity(new Intent(this, login_s2.class)));
+        findViewById(R.id.signin).setOnClickListener(v -> startActivity(new Intent(this, login_s2.class)));
     }
 
     //check for valid email

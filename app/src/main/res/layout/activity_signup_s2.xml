@@ -83,7 +83,8 @@
                 android:paddingStart="8dp"
                 android:textColor="@color/text_secondary"
                 android:textSize="14sp"
-                tools:ignore="RtlSymmetry,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                tools:ignore="RtlSymmetry,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:importantForAutofill="no" />
 
             <Space
                 android:layout_width="match_parent"

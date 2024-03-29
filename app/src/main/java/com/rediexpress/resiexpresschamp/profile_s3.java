@@ -2,13 +2,17 @@ package com.rediexpress.resiexpresschamp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ImageView;
+import android.widget.CheckBox;
+import android.widget.FrameLayout;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class profile_s3 extends AppCompatActivity {
 
@@ -23,9 +27,30 @@ public class profile_s3 extends AppCompatActivity {
             return insets;
         });
 
-        //change profile
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            if (item.getItemId() == R.id.Homenavig) {
+                Intent intent = new Intent(profile_s3.this, home_s3.class);
+                startActivity(intent);
+                return true;
+            } else if (item.getItemId() == R.id.Walletnavig) {
+                Intent intent = new Intent(profile_s3.this, wallet_s3.class);
+                startActivity(intent);
+                return true;
+            } else if (item.getItemId() == R.id.Tracknavig) {
+                Intent intent = new Intent(profile_s3.this, track_s3.class);
+                startActivity(intent);
+                return true;
+            }
 
-        //intent to editprofile
+            // hide balance with ***** if selected
+            CheckBox balance = findViewById(R.id.hidebalance);
+            if (balance.isChecked()) {
+                TextView balance2 = findViewById(R.id.balance);
+                balance2.setText("*****");
+            }
+
+            //intent to editprofile
         /*
 
         ImageView editprofile = findViewById(R.id.smallarrow);
@@ -40,26 +65,34 @@ public class profile_s3 extends AppCompatActivity {
             Intent intent = new Intent(profile_s3.this, statementsandpeports_s3.class);
             startActivity(intent);
         });
+        */
 
         //intent notifications
-        ImageView notifications = findViewById(R.id.smallarrow2);
+            TextView notification = findViewById(R.id.notificationssettings);
+        notification.setOnClickListener(v -> {
+            Intent intent = new Intent(profile_s3.this, notifications_s3.class);
+            startActivity(intent);
+        });
+        FrameLayout notifications = findViewById(R.id.notificationsettingsbox);
         notifications.setOnClickListener(v -> {
             Intent intent = new Intent(profile_s3.this, notifications_s3.class);
             startActivity(intent);
         });
 
-         */
 
         // intent to card view
-        ImageView cardview = findViewById(R.id.smallarrow3);
-        cardview.setOnClickListener(v -> {
+            TextView cards = findViewById(R.id.cardnadbankacc);
+        cards.setOnClickListener(v -> {
             Intent intent = new Intent(profile_s3.this, addpayment_s3.class);
             startActivity(intent);
         });
 
+        FrameLayout cardview = findViewById(R.id.cardeditbox);
+        cardview.setOnClickListener(v -> {
+            Intent intent = new Intent(profile_s3.this, addpayment_s3.class);
+            startActivity(intent);
+        });
         /*
-
-
         //intent to refferals
         ImageView refer = findViewById(R.id.smallarrow4);
         refer.setOnClickListener(v -> {
@@ -73,14 +106,20 @@ public class profile_s3 extends AppCompatActivity {
             Intent intent = new Intent(profile_s3.this, aboutus_s3.class);
             startActivity(intent);
         });
+        */
 
         //intent to logout
-        ImageView logout = findViewById(R.id.smallarrow6);
+            TextView logouts = findViewById(R.id.logout);
+        logouts.setOnClickListener(v -> {
+            Intent intent = new Intent(profile_s3.this, login_s2.class);
+            startActivity(intent);
+        });
+        FrameLayout logout = findViewById(R.id.logoutbox);
         logout.setOnClickListener(v -> {
             Intent intent = new Intent(profile_s3.this, login_s2.class);
             startActivity(intent);
         });
-
-        */
+            return false;
+        });
     }
 }

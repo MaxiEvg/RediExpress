@@ -57,9 +57,7 @@ public class forgotpass_s2 extends AppCompatActivity {
 
         findViewById(R.id.signin).setOnClickListener(v -> startActivity(new Intent(this, login_s2.class)));
 
-        findViewById(R.id.setnewpass).setOnClickListener(v -> {
-            startActivity(new Intent(this, otpverification_s2.class));
-        });
+        findViewById(R.id.setnewpass).setOnClickListener(v -> startActivity(new Intent(this, otpverification_s2.class)));
 
 
     }

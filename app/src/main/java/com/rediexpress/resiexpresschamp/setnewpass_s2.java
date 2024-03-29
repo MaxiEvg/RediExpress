@@ -57,9 +57,7 @@ public class setnewpass_s2 extends AppCompatActivity {
             }
         }).start();
 
-        findViewById(R.id.loginbutton).setOnClickListener(v -> {
-            startActivity(new Intent(this, login_s2.class));
-        });
+        findViewById(R.id.loginbutton).setOnClickListener(v -> startActivity(new Intent(this, login_s2.class)));
     }
     public boolean passwordsMatch() {
         EditText password1 = findViewById(R.id.inewpass1);
